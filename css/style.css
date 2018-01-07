@@ -1,0 +1,178 @@
+/*
+ * Please see the included README.md file for license terms and conditions.
+ */
+
+/*
+ * This section is to edit the header.
+ */
+.logo {
+    float: right;
+    font-family: "Guild";
+    font-size: 15px;
+    width: 80% ;
+    margin-right: 10% ;
+    text-align: center ;
+}
+.header {
+    -webkit-backface-visibility: hidden ;
+    height: 70px ;
+    background: darkcyan ;
+    width: 100% ;
+    top: 0 ;
+    position: absolute ;
+    flex-wrap: wrap ;
+}
+.header .logo a {
+    text-decoration: none ;
+    color: azure ;
+}
+
+/* 
+ * This section is to edit the navigation bar.
+ * Idea inspired from http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support
+ */
+.navigation {
+    float: left;
+    width: 100%;
+    height: 30px;
+    margin-top: -30px;
+    background-image: url(congruent_outline.png);
+    border-bottom: 4px solid #000;
+    overflow: hidden;
+    position: relative;
+}
+.navigation ul {
+    clear: left;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    text-align: center;
+}
+.navigation ul li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 50%;
+}
+.navigation ul li a {
+    display: block;
+    margin: 20 0 0 20px;
+    padding: 4px 10px;
+    color: white;
+    text-decoration: none;
+    line-height: 1.3em;
+}
+.navigation ul li a:hover {
+    background: #369;
+    color: #fff;
+}
+.navigation ul li a.active,
+.navigation ul li a.active:hover {
+    color: #fff;
+    background: #000;
+    font-weight: bold;
+}
+
+/*
+ * This section is to edit the side navigation bar for links to my GitHub, LinkedIn, and Gmail accounts.
+ */
+.box {
+    margin-top: 50px ;
+    width: 50px ;
+    height: 205px ;
+    position: fixed ;
+    margin-left: 100px auto ;
+    border-radius: 25px ;
+    background: white ;
+    border-color: darkcyan ;
+    border-style: solid ;
+}
+.buttons {
+    margin-top: 50px ;
+    width: 50px ;
+    height: 205px ;
+    position: fixed ;
+    margin-left: -88px ;
+    align-content: left ;
+}
+
+li {
+    list-style: none ;
+    float: left ;
+    margin-left: 60px ;
+    padding-top: 8px ;
+    border-bottom: 1px solid azure ;
+}
+
+/*
+ * Types of horizontal rules.
+ */
+#type1 {
+    border: 0 ;
+    height: 3px ;
+    color: darkslategray ;
+    background-image: linear-gradient(to right, #ccc, darkcyan, #ccc) ;
+}
+#type2 {
+    border: 0 ;
+    height: 1px ;
+    color: darkslategray ;
+    background-image: linear-gradient(to right, #ccc, darkcyan, #ccc) ;
+}
+
+body {
+    /* margin: 0.5rem ; */
+    margin: 0 auto ;
+    margin-top: 100px ;
+    background-image: url(small_steps.png) ;
+    color: darkslategray;
+    font-style: normal ;
+    font-family: "Quicksand-Regular" ;
+    font-size: 16px ;
+}
+
+.content {
+    font-family: "Quicksand-Regular" ;
+    font-size: 20px ;
+    margin-left: 100px ;
+    margin-right: 8% ;
+}
+
+.align-center {
+    text-align: center ;
+}
+
+.alight-left {
+    text-align: left ;
+}
+
+.alight-right {
+    text-align: right ;
+}
+
+@font-face {
+    font-family: "Guild" ;
+    src: url(guildof.ttf) format("truetype"),
+        url(guildof.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Quicksand-Regular" ;
+    src: url(Quicksand-Regular.otf) format("opentype") ;
+}
+
+@viewport {
+    zoom: 1.0 ;
+    width: extend-to-zoom ;
+}
+
+@-ms-viewport {
+    zoom: 1.0 ;
+    width: extend-to-zoom ;
+}
