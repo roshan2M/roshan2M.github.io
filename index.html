@@ -278,7 +278,7 @@
         
         let frameCount = 0;
         function animate() {
-            if (++frameCount % 4 === 0) updateGrid();
+            if (++frameCount % 10 === 0) updateGrid();
             drawGrid();
             requestAnimationFrame(animate);
         }
