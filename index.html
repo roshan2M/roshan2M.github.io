@@ -239,21 +239,11 @@
                     let neighbors = countNeighbors(i, j);
                     let current = grid[i][j];
                     
-                    // Conway's Game of Life rules
+                    // Apply Game of Life rules
                     if (current === 1) {
-                        // Live cell
-                        if (neighbors < 2 || neighbors > 3) {
-                            nextGrid[i][j] = 0; // Dies
-                        } else {
-                            nextGrid[i][j] = 1; // Survives
-                        }
+                        nextGrid[i][j] = (neighbors === 2 || neighbors === 3) ? 1 : 0;
                     } else {
-                        // Dead cell
-                        if (neighbors === 3) {
-                            nextGrid[i][j] = 1; // Becomes alive
-                        } else {
-                            nextGrid[i][j] = 0; // Stays dead
-                        }
+                        nextGrid[i][j] = (neighbors === 3) ? 1 : 0;
                     }
                 }
             }
