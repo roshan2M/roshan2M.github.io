@@ -148,10 +148,10 @@
                 }
             }
             
-            addCoolPatterns();
+            addCommonPatterns();
         }
         
-        function addCoolPatterns() {
+        function addCommonPatterns() {
             // Define famous Conway patterns
             const patterns = {
                 glider: [
@@ -278,8 +278,10 @@
         
         let frameCount = 0;
         function animate() {
-            if (++frameCount % 10 === 0) updateGrid();
-            drawGrid();
+            if (++frameCount % 10 === 0) {
+                updateGrid();
+                drawGrid();
+            }
             requestAnimationFrame(animate);
         }
         
